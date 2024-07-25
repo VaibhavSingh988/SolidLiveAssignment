@@ -1,0 +1,19 @@
+Changes in dip{
+    Reader, Writer, DatabaseReader, and DatabaseWriter file are added to handle the read, write and encrypt sepratelly depending upon the requirement.
+}
+
+Changes in isp{
+    Door interface was inheriting TimerClient and SensorClient interfaces as a result SensingDoor and TimedDoor functions have one unnecesary function that throws an error. Do not inherit SensorClient and TimerClient to door and inherit them as per the need in the SensingDoor and TimedDoor classes.
+}
+
+Changes in lsp{
+    Initially we might encounter an error when we use peristent class with non string objects in place of set class. To solve the problem we can make changes to PersistentObject class to handle non string values and avoid prompting error.
+}
+
+Changes in ocp{
+    No changes.
+}
+
+Changes in srp{
+    The Employee class has additional funtion of converting the object to html. I added another class that will handle file formate change requests. As of now it converts Employee object to html but needed we can add funtion to ChangeFileFormate class to handle other formate changes options like changing to json, etc.
+}
